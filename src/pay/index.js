@@ -5,7 +5,7 @@
  * @param {*} req 
  */
 module.exports = async function (context, req) {
-    const amount = (req.query.amount || (req.body && req.body.amount));
+    const amount = Number((req.query.amount || (req.body && req.body.amount)));
 
     // amount must be positive
     if(amount <= 0){
