@@ -20,4 +20,15 @@ describe('HTTP triggered pay endpoint / azure function', () => {
         expect(context.res.body).toEqual({success: true, result: result});
         expect(context.res.status).toEqual(200);
     })
+
+    it('should fail when the given parameter is not positve', async () => {
+        const request = {
+            query: {amount: -1}
+        };
+
+        await httpFunction(context, request);
+
+        expect(context.res.body).toEqual({success: false, error: 'Illegal amount type! Please provide a positive number!'});
+        expect(context.res.status).toEqual(400);
+    })
 });
