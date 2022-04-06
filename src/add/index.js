@@ -1,5 +1,5 @@
 /**
- * Azure function for pay endpoint
+ * Azure function for add endpoint
  * 
  * @param {*} context - run context (azure)
  * @param {*} req 
@@ -28,6 +28,6 @@ module.exports = async function (context, req) {
  * @param {*} a
  * @returns sum of a and 2
  */
-module.exports.pay = function(a){
+module.exports.add = function(a){
     return a + 2;
 }

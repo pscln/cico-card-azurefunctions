@@ -1,12 +1,12 @@
-const index = require('../../src/pay/index');
+const index = require('../../src/add/index');
 
 /**
- * unit test for pay function
+ * unit test for add function
  */
-describe('pay function', () => {
+describe('add function', () => {
     it('calculates sum of parameter and 2', () => {
         const expectResult = 4;
-        var result = index.pay(2);
+        var result = index.add(2);
 
         expect(result).toBe(expectResult);
     })
