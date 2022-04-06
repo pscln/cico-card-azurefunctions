@@ -10,7 +10,7 @@ describe('HTTP triggered pay endpoint / azure function', () => {
      * test with correct request that should return status 200
      */
     it('should return the sum of parameter and 2 with status 200', async () => {
-        const result = 2 + 2;
+        const result = 4;
         const request = {
             query: {amount: 2}
         };
