@@ -2,7 +2,7 @@ const httpFunction = require('../../src/add/index')
 const context = require('../context')
 
 /**
- * test of the dummy add endpoint / azure function
+ * test of the add endpoint / azure function
  */
 describe('HTTP triggered add endpoint / azure function', () => {
 
